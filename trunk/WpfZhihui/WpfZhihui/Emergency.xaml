@@ -1,0 +1,8 @@
+﻿<Window x:Class="WpfZhihui.Emergency"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Emergency" Height="394" Width="494">
+    <Grid>
+        <WebBrowser Height="314" HorizontalAlignment="Left" Margin="47,41,0,0" Name="webBrowser1" VerticalAlignment="Top" Width="506" />
+    </Grid>
+</Window>

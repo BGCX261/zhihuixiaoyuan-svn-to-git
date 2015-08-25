@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>路况信息</title>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.1&services=true"></script>
+</head>
+<body>
+<div style="width:520px;height:340px;border:1px solid gray" id="container"></div>
+</body>
+</html>
+<script type="text/javascript">
+var map = new BMap.Map("container");
+var point = new BMap.Point(121.48, 31.22);
+map.centerAndZoom(point, 11);
+map.addControl(new BMap.NavigationControl());
+map.enableScrollWheelZoom();
+map.addControl(new BMap.ScaleControl());
+var traffic = new BMap.TrafficControl();            // 添加实时路况控件
+map.addControl(traffic);
+traffic.show(); 
+</script>
